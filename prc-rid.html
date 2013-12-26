@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>身份证号码验证</title>
+  <style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+  }
+  input {
+    font-family: Menlo, Monaco, Consolas, monospace;
+    font-size: 1em;
+    width: 18em;
+    outline: none;
+    border: solid 1px #eee;
+  }
+  input[readonly] {
+    background: #ffe;
+  }
+  input.invalid {
+    background: #fee;
+    border-color: #f00;
+  }
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>
+</head>
+<body>
+
+<label>身份证号码</label>
+<input id="rid" type="text" maxlength="18" /><br />
+
+<label>地址</label>
+<input id="area" type="text" readonly /><br />
+
+<label>出生日期</label>
+<input id="dob" type="text" readonly /><br />
+
+<label>性别</label>
+<input id="gender" type="text" readonly />
+
+<script src="prc-rid.js"></script>
+</body>
+</html>
